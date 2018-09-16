@@ -1,18 +1,192 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:padding="5dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
+<!-- 线性布局，默认水平，不能重叠
+    android:layout_weight="1" 权重
+    -->
+    <!--<LinearLayout-->
+        <!--android:layout_weight="1"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp">-->
+        <!--<TextView-->
+            <!--android:text="#FF00"-->
+            <!--android:background="#FF00"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"></TextView>-->
+        <!--<TextView-->
+            <!--android:text="#FF00"-->
+            <!--android:background="#FF00"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"></TextView>-->
+        <!--<TextView-->
+            <!--android:text="#FF00"-->
+            <!--android:background="#FF00"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"></TextView>-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+        <!--android:layout_weight="1"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp">-->
+        <!--<TextView-->
+            <!--android:text="#FF00"-->
+            <!--android:background="#FF00"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"></TextView>-->
+        <!--<TextView-->
+            <!--android:text="#FF00"-->
+            <!--android:background="#FF41"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"></TextView>-->
+        <!--<TextView-->
+            <!--android:text="#FF00"-->
+            <!--android:background="#FF"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"></TextView>-->
+        <!---->
+    <!--</LinearLayout>-->
+    <!--<Button-->
+        <!--android:text="第一个按钮"-->
+        <!--android:layout_gravity="left"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+    <!--<Button-->
+        <!--android:text="第二个按钮"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+    <!--<Button-->
+        <!--android:text="第三个按钮"-->
+        <!--android:layout_gravity="right"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+    <!--相对布局，默认的原点是左上角，支持重叠
+        只能参照屏幕和另外的组件
+        layout_align*上下左右对齐
+    -->
+    <!--<Button-->
+        <!--android:id="@+id/btn_center"-->
+        <!--android:text="中心"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+    <!--<Button-->
+        <!--android:text="中上"-->
+        <!--android:layout_alignLeft="@+id/btn_center"-->
+        <!--android:layout_above="@+id/btn_center"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+    <!--<Button-->
+        <!--android:text="右下"-->
+        <!--android:layout_toRightOf="@+id/btn_center"-->
+        <!--android:layout_below="@+id/btn_center"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+    <!--<Button-->
+        <!--android:text="左下"-->
+        <!--android:layout_toLeftOf="@+id/btn_center"-->
+        <!--android:layout_below="@+id/btn_center"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+    <!--<Button-->
+        <!--android:text="中下"-->
+        <!--android:layout_alignLeft="@+id/btn_center"-->
+        <!--android:layout_below="@+id/btn_center"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+    <!--<Button-->
+        <!--android:text="左上"-->
+        <!--android:layout_toLeftOf="@+id/btn_center"-->
+        <!--android:layout_above="@+id/btn_center"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+    <!--<Button-->
+        <!--android:text="右上"-->
+        <!--android:layout_toRightOf="@+id/btn_center"-->
+        <!--android:layout_above="@+id/btn_center"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+    <!--<Button-->
+        <!--android:text="左中"-->
+        <!--android:layout_toLeftOf="@+id/btn_center"-->
+        <!--android:layout_alignBaseline="@+id/btn_center"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+    <!--<Button-->
+
+        <!--android:text="右中"-->
+        <!--android:layout_toRightOf="@+id/btn_center"-->
+        <!--android:layout_alignBaseline="@+id/btn_center"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+    <!--<ListView-->
+        <!--android:layout_weight="1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="0dp">-->
+        <!---->
+    <!--</ListView>-->
+    <!--<RadioGroup-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<RadioButton-->
+            <!--android:drawableTop="@drawable/all"-->
+            <!--android:text="程序"-->
+            <!--style="@style/RadioButtonStyle" />-->
+        <!--<RadioButton-->
+            <!--android:drawableTop="@drawable/back"-->
+            <!--android:text="返回"-->
+            <!--style="@style/RadioButtonStyle"-->
+            <!--/>-->
+        <!--<RadioButton-->
+            <!--android:drawableTop="@drawable/close"-->
+            <!--android:text="关闭"-->
+            <!--style="@style/RadioButtonStyle"-->
+            <!--/>-->
+        <!--<RadioButton-->
+            <!--android:drawableTop="@drawable/Category"-->
+            <!--android:text="设置"-->
+            <!--style="@style/RadioButtonStyle"-->
+            <!--/>-->
+    <!--</RadioGroup>-->
     <TextView
+        android:text="张三"
+        android:textSize="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_alignParentRight="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical">
+        <TextView
+            android:text="1333333"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp" />
+        <TextView
+            android:text="1333333"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp" />
 
-</android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+</RelativeLayout>
